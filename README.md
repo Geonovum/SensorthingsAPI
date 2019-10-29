@@ -7,6 +7,7 @@ De sensor data voor grondwaterstanden die [hier](https://github.com/Geonovum/Sen
 
 # Aandachtspunten Nederlands profiel sensorthingsAPI
 ## Ruwe data inwinnen & uitleveren
+Sensorthings lijkt heel geschikt voor het standaardiseerd verzamelen en uitgeven van "ruwe" sensordata.
 ## Analyses
 Sensorthings biedt uitgebreide mogelijkheden om verschillende soorten filtering toe te passen en daarmee analyses te doen. Is het handig om gebruik van SensorthingsAPI hiervoor te verplichten?
 ## Aansluiten op OAS (open API specificatie)
