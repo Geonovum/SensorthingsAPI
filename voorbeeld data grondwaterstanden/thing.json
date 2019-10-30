@@ -1,0 +1,11 @@
+{
+	"name": "Grondwatermonitoring put: GMWXXXXXXXXXXXX",
+	"description": "Dit is een fictieve grondwater monitoring put",
+	"properties": {
+		"owner": "Gemeente Nederpoort",
+		"createdBy": "Boormans putten & gaten",
+		"broId": "GMWXXXXXXXXXXXX"
+		"date": "01/09/19",
+		"time": "12:16:32"
+	}
+}
