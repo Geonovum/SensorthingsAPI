@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SenseAms WaterData to SensorThings API",
+		"_postman_id": "7656fb77-a9af-ee1d-4fda-cfd41375ed7b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Step 1: POST a Thing",
+			"request": {
+				"url": "https://sta.map5.nl/gost/v1.0/Things",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"SensMakersAms WaterApp EC XYZ\",\t\n  \"description\": \"SensMakersAms mijnomgeving WaterApp\",\n  \"properties\": {\n    \"org_id\": \"SenseMakersAms\",\n    \"proj_id\": \"WaterApp\",\n    \"dev_id\": \"the_dev_id\",\n    \"app_id\": \"mijnomgeving\",\n    \"name\": \"EC XYZ\"\n  },\n  \"Locations\": [\n    {\n      \"name\": \"EC XYZ\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"EC XYZ\",\n      \"location\": {\"coordinates\":[5.1747457 ,52.2261567],\"type\":\"Point\"}\n    }\n  ]\n}"
+				},
+				"description": "Step 1: \nCREATE a Thing entity instance as well as the Thing's Location. \n\nThe station defined by dev_id is Thing in API data model.\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Step 2: POST an ObservedProperty (once)",
+			"request": {
+				"url": "https://sta.map5.nl/gost/v1.0/ObservedProperties",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n  \"name\": \"WaterTemperature\",\n  \"description\": \"Water Temperature\",\n  \"definition\": \"https://en.wikipedia.org/wiki/Temperature\"\n}\n"
+				},
+				"description": "Step 2.a: \n\n* CREATE an ObservedProperty instance (when the observed property doesn't existing in the system) \n* If no existing ObservedProperty, create an ObservedProperty entity instance by POST the following JSON to the server. \n* An ObservedProperty describes what is the phenomenon a datastream is measuring. And once an ObservedProperty is created, it SHALL be reused by other Datastreams that measuring the same phenomenon. In this example, we use the definition from DBPedia. Note that different domain application might have different definition though.\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Step 3: POST a Sensor (once)",
+			"request": {
+				"url": "https://sta.map5.nl/gost/v1.0/Sensors",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\":\"temperature\",\n  \"encodingType\": \"application/pdf\",\n  \"metadata\": \"Temperature in C\",\n  \"description\": \"Temperature in C\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Step 4: POST an new Datastream",
+			"request": {
+				"url": "https://sta.map5.nl/gost/v1.0/Datastreams",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Water Temperature \",\n  \"unitOfMeasurement\": {\n    \"name\": \"Temp\",\n    \"symbol\": \"C\",\n    \"definition\": \"\"\n  },\n  \"Thing\": {\n    \"@iot.id\": \"id_of_the_Thing_created_in_Step_1 as int\"\n  },\n  \"description\": \"Datastream for SenseAms Water Temperature\",\n  \"Sensor\": {\n    \"@iot.id\": \"id_of_Sensor_created_in_Step_3 as int\"\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": \"id_of_ObservedProperty_created_in_Step_2 as int\"\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
+				},
+				"description": "* Step 4: CREATE a new Datastream by linking to the newly created (or existing) Sensor and ObservedProperty\n\n"
+			},
+			"response": []
+		}
+	]
+}

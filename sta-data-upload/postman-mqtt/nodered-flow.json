@@ -1,0 +1,205 @@
+[
+  {
+    "id": "28a1dae5.15d626",
+    "type": "tab",
+    "label": "SenseMakersAms-Flow1",
+    "disabled": false,
+    "info": "Try to map to GOST"
+  },
+  {
+    "id": "668b2504.57f6ac",
+    "type": "mqtt in",
+    "z": "28a1dae5.15d626",
+    "name": "MQTT  In - SenseMakersAms-mijnomgeving",
+    "topic": "pipeline/mijnomgeving/#",
+    "qos": "2",
+    "datatype": "auto",
+    "broker": "ef34dcd0.b7c6e",
+    "x": 210,
+    "y": 100,
+    "wires": [
+      [
+        "5fa20aff.f44ee4",
+        "d2d85031.93e8a"
+      ]
+    ]
+  },
+  {
+    "id": "5fa20aff.f44ee4",
+    "type": "debug",
+    "z": "28a1dae5.15d626",
+    "d": true,
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": true,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "x": 680,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "2a1ed617.e15c2a",
+    "type": "mqtt out",
+    "z": "28a1dae5.15d626",
+    "name": "STA GOST MQTT Out",
+    "topic": "",
+    "qos": "",
+    "retain": "",
+    "broker": "a112a315.e2515",
+    "x": 580,
+    "y": 520,
+    "wires": []
+  },
+  {
+    "id": "d2d85031.93e8a",
+    "type": "function",
+    "z": "28a1dae5.15d626",
+    "name": "WaterTemp In to STA Obs",
+    "func": "var json_payload = JSON.parse(msg.payload);\nvar date = new Date(json_payload[\"payload_fields\"][\"timestamp\"] * 1000);\nmsg.payload = {\n    \"result\": json_payload[\"payload_fields\"][\"waterTemperature\"],\n    \"resultTime\": date,\n    \"phenomenonTime\": date,\n    \"parameters\" : {\n        \"name\": json_payload[\"tag_fields\"][\"name\"],\n        \"app_id\": json_payload[\"app_id\"],\n        \"dev_id\": json_payload[\"dev_id\"],\n        \"obs_type\": \"waterTemperature\"\n    }\n};\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 210,
+    "y": 240,
+    "wires": [
+      [
+        "58cf6fce.c84a9",
+        "2db7dcf5.57a114"
+      ]
+    ]
+  },
+  {
+    "id": "58cf6fce.c84a9",
+    "type": "debug",
+    "z": "28a1dae5.15d626",
+    "d": true,
+    "name": "GOST Obs Out",
+    "active": true,
+    "tosidebar": true,
+    "console": true,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "x": 690,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "2db7dcf5.57a114",
+    "type": "function",
+    "z": "28a1dae5.15d626",
+    "name": "dev_id and obs_type to GOST Topic",
+    "func": "/// Maps dev_id plus sensor to GOST Datastream\nvar topicMap = {\n    \"357518080166754\": {\n        \"waterTemperature\": \"Datastreams(2)\"\n    },\n    \"357518080166481\": {\n        \"waterTemperature\": \"Datastreams(3)\"\n    },\n    \"357518080166887\": {\n        \"waterTemperature\": \"Datastreams(4)\"\n    },\n    \"357518080201338\": {\n        \"waterTemperature\": \"Datastreams(5)\"\n    }\n}\nvar devId = msg.payload[\"parameters\"][\"dev_id\"];\nvar obsType = msg.payload[\"parameters\"][\"obs_type\"];\n\nif (!topicMap[devId] || !topicMap[devId][obsType]) {\n    return null;\n}\nvar datastreamId = topicMap[devId][obsType];\nmsg.topic = \"GOST/\" + datastreamId + \"/Observations\";\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 210,
+    "y": 420,
+    "wires": [
+      [
+        "2a1ed617.e15c2a",
+        "64afd058.6284c"
+      ]
+    ]
+  },
+  {
+    "id": "64afd058.6284c",
+    "type": "debug",
+    "z": "28a1dae5.15d626",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": true,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "x": 680,
+    "y": 300,
+    "wires": []
+  },
+  {
+    "id": "dbb2b490.6157d8",
+    "type": "comment",
+    "z": "28a1dae5.15d626",
+    "name": "MQTT Input",
+    "info": "Deze luistert op alle berichten van Topic \"pipeline/mijnomgeving\".",
+    "x": 230,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "120b46d6.ef6e59",
+    "type": "comment",
+    "z": "28a1dae5.15d626",
+    "name": "Extract en Map naar STA Observation",
+    "info": "Extraheert bijv waterTemperatuur en maakt een STA Observation aan met metadata in parameters.",
+    "x": 290,
+    "y": 200,
+    "wires": []
+  },
+  {
+    "id": "7b655919.436668",
+    "type": "comment",
+    "z": "28a1dae5.15d626",
+    "name": "Vult MQTT publish GOST STA Topic in op basis dev_id en obs_type",
+    "info": "",
+    "x": 260,
+    "y": 380,
+    "wires": []
+  },
+  {
+    "id": "2faf6bda.31cd94",
+    "type": "comment",
+    "z": "28a1dae5.15d626",
+    "name": "MQTT output generiek naar GOST",
+    "info": "",
+    "x": 640,
+    "y": 480,
+    "wires": []
+  },
+  {
+    "id": "ef34dcd0.b7c6e",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "mqtt.sensemakersams.org",
+    "broker": "mqtt.sensemakersams.org",
+    "port": "9998",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": false,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "closeTopic": "",
+    "closeQos": "0",
+    "closePayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "a112a315.e2515",
+    "type": "mqtt-broker",
+    "z": "",
+    "name": "sta.map5.nl GOST",
+    "broker": "sta.map5.nl ",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": false,
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "closeTopic": "",
+    "closeQos": "0",
+    "closePayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  }
+]
