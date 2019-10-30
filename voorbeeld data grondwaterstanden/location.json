@@ -1,0 +1,15 @@
+{
+	"encodingType": "application/vnd.geo+json",
+	"name": "Putlocatie GMWXXXXXXXXXXXX",
+	"description": "10J0080f1 - fictief punt",
+	"location": {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [
+				-114.06,
+				51.05
+			]
+		}
+	}
+}

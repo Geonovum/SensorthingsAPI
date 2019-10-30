@@ -1,0 +1,27 @@
+{
+	"Sensor": {
+		"@iot.id": 1
+	},
+	"ObservedProperty": {
+		"description": "De temperatuur wordt bepaald aan de hand dmv een druksensor die ook de temperatuur meet.",
+		"name": "Temperatuur",
+		"definition": "https://library.wur.nl/WebQuery/wurpubs/fulltext/215081"
+	},
+	"name": "temperatuur",
+	"description": "dit is een datastream die de temperatuur in een buis meet.",
+	"unitOfMeasurement": {
+		"name": "gradenCelsius",
+		"symbol": "°C",
+		"definition": "http://unitsofmeasure.org/ucum.html#para-30"
+	},
+	"observationType": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement",
+	"observedArea": {
+		"type": "Point",
+		"coordinates": [
+			-114.06,
+			51.05
+		]
+	},
+	"phenomenonTime": "2018-08-06T12:00:00Z/2019-01-09T12:00:00Z",
+	"resultTime": "2018-08-06T12:00:00Z/2019-01-09T12:00:00Z"
+}
