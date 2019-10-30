@@ -1,0 +1,26 @@
+Opzetten standalone FROST server in TOMCAT (+/- 1 uur).
+
+- Download en installeer PostgreSQL server voor windhoos: https://www.postgresql.org/download/windows/
+- Gebruik stackbuilder (postgres install dir/bin/stackbuilder.exe) om de postgis extensie te installeren
+- Download en installeer pgAdmin: https://www.pgadmin.org/download/pgadmin-4-windows/
+- Gebruik pgAdmin om een nieuwe database 'sensorthings' aan te maken
+- Voeg de postgis extensie toe aan de sensorthings database.
+- Download FROST Jar (https://github.com/FraunhoferIOSB/FROST-Server) - de MQTTP all-in-one package 
+   Zie ook: https://github.com/FraunhoferIOSB/FROST-Server/blob/master/docs/postgresql.adoc voor details.
+- Installeer Tomcat 8.5
+- Pas $CATALINA_HOME/conf/context.xml aan door een database resource toe te voegen:
+	<Resource
+    name="jdbc/sensorThings" auth="Container"
+    type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+    url="jdbc:postgresql://localhost:5432/sensorthings"
+    username="postgres" password="geheim"
+    maxTotal="20" maxIdle="10" maxWaitMillis="-1"/>
+- Kopieer de database driver voor postgresql naar $CATALINA_HOME/lib (https://repo.maven.apache.org/maven2/org/postgresql/postgresql/9.4.1212/postgresql-9.4.1212.jar)
+- Kopieer de postgis jar naar $CATALINA_HOME/lib (https://repo.maven.apache.org/maven2/net/postgis/postgis-jdbc/2.2.1/postgis-jdbc-2.2.1.jar)
+- Kopieer de Frost-Server jar (al dan niet zelf gebouwd of kant en klaar gedownload) naar de $CATALINA_HOME/webapps/ folder
+- Start Tomcat ($CATALINA_HOME/bin/startup.bat)
+- open: http://localhost:8080/<<FROST Server context-root>>/DatabaseStatus en klik op do update
+
+FROST server is nu beschikbaar voor Postman of een vergelijkbare applicatie.
+
+Merk op: deze installatie is geschikt voor evaluatie doeleinden - maar hoogstwaarschijnlijk niet heel schaalbaar.
