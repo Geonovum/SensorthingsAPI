@@ -4,7 +4,7 @@ Door: [Just van den Broecke](https://github.com/justb4/).
 
 De data is beschikbaar via een MQTT endpoint `mqtt.sensemakersams.org:9998` Topic `pipeline/mijnomgeving/#` .
 De STA server is de GOST Server op https://sta.map5.nl/gost/v1.0 en bijbehorende MQTT (`mosquitto`) server.
-In eerste instantie alleen Water Temperatuur uitgevoerd.
+In eerste instantie alleen Water Temperatuur uitgevoerd. Ter oefening kan ook Water EC (resistance) gedaan worden.
 
 Dit is uitgewerkt volgens de hybride methode. 
 Deze volgt dezelfde conventie als de [GOST Workshop](https://github.com/gost/workshops/blob/master/2017_foss4g_boston/3_configuration.md).
@@ -20,7 +20,7 @@ Ad 1) dit is nodig omdat `Observations` uiteindelijk aan een `Datastream` gekopp
 * Eenmalig wordt voor "Water Temperatuur" een `Sensor` en `ObservedProperty` aangemaakt.
 * De `Datastream` wordt aangemaakt en koppelt `Thing, Sensor, ObservedProperty` en levert een `id` voor de latere MQTT publish Topic.
 
-We gebruiken hier `Postman` maar kan natuurlijk ook met `curl` of nog beter: in Python.
+We gebruiken hier `Postman` Desktop maar kan natuurlijk ook met `curl` of nog beter: in Python.
 
 Ad 2) hierbij is volgende nodig:
 
@@ -31,9 +31,9 @@ Ad 2) hierbij is volgende nodig:
 
 ## Tools
 
-* `mosquitto_sub` om te testen
-* `Postman` voor HTTP publishing mbv "Postman Collection template"
-* `NodeRed` voor MQTT naar MQTT mapping
+* [mosquitto_sub](https://mosquitto.org/) MQTT client (server/broker is niet nodig) om te testen
+* [Postman](https://www.getpostman.com/) voor HTTP publishing mbv "Postman Collection v2 template"
+* [NodeRed](https://nodered.org/) voor MQTT naar MQTT mapping (reeds op GOST Demo server beschikbaar)
 
 ## MQTT Mapping
 Bekijk de binnenkomende berichten:  `mosquitto_sub -t pipeline/# -h mqtt.sensemakersams.org -p 9998 -u <user> -P <wachtwoord>`.
@@ -84,13 +84,13 @@ Uitgaande `Observations` (zie ook de metadata in `parameters`) zo:
 ```
 
 ## 1 - Entities in Postman aanmaken
-Installeer Postman en laadt het bestand [SenseAms2STA.postman_collection.json](SenseAms2STA.postman_collection.json).
-Je ziet 4 stappen. 
+Installeer Postman Desktop en laad het bestand [SenseAms2STA.postman_collection.json](SenseAms2STA.postman_collection.json).
+Je ziet 4 stappen. Alleen eerste keer allevier uitvoeren, daarna Step 1 en 4 voor opeenvolgende devices/`Things`.
 
 Voor ieder `dev_id` verzamel je de gegevens: `dev_id`, `name`, `Lat`, `Lon`, `app_id`.
 Voer de 4 Stappen uit in Postman, onthoud steeds de `id` uit de velden `@iot.id` die de STA Server teruggeeft.
 `Sensor, ObservedProperty` hoeft maar eenmalig voor Water Temp en is al in server aangemaakt (`id` beiden 1).
-Vooral in Stap 4 moet je voor de Datastream 3 id's hebben: `Thing, Sensor, ObservedProperty`.
+Vooral in Stap 4 moet je voor de `Datastream` 3 id's hebben: `Thing, Sensor, ObservedProperty`.
 
 Zie screenshot voorbeeld:
 
@@ -160,4 +160,9 @@ var datastreamId = topicMap[devId][obsType];
 msg.topic = "GOST/" + datastreamId + "/Observations";
 return msg;
 
-```
+``` 
+
+# Ter Uitbreiding
+
+* "smart" aanmaken STA Entities in NodeRed via HTTP
+
