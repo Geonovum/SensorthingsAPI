@@ -20,6 +20,10 @@ Linux Ubuntu ([Just van den Broecke](https://github.com/justb4/)) en Kubernetes 
 
 * GOST via Geonovum/[justb4](https://github.com/justb4): https://sta.map5.nl/gost/v1.0
 
+# tooling
+python cli applicatie voor laden van  sensor observaties van sensemakersams mqtt stream in STA: 
+https://github.com/arbakker/sta-obs-loader
+
 # Aandachtspunten Nederlands profiel sensorthingsAPI
 ## Ruwe data inwinnen & uitleveren
 Sensorthings lijkt heel geschikt voor het standaardiseerd verzamelen en uitgeven van "ruwe" sensordata.
