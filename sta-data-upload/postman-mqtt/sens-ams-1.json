@@ -1,0 +1,972 @@
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080168982",
+  "payload_fields": {
+    "imei": 357518080168982,
+    "timestamp": 1572351009,
+    "batteryVoltage": 4.21,
+    "boardTemperature": 17,
+    "waterEC": 294,
+    "waterTemperature": 14.39,
+    "Lat": 52.2261655,
+    "Lon": 5.1747002,
+    "altitude": 9,
+    "speed": 0,
+    "course": 0,
+    "SatInFix": 9,
+    "FixAge": 32,
+    "TimeActive": 65742,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 233"
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166754",
+  "payload_fields": {
+    "imei": 357518080166754,
+    "timestamp": 1572351035,
+    "batteryVoltage": 4.16,
+    "boardTemperature": 15,
+    "waterEC": 940,
+    "waterTemperature": 13.15,
+    "Lat": 52.3535373,
+    "Lon": 4.9253268,
+    "altitude": 43,
+    "speed": 1,
+    "course": 247,
+    "SatInFix": 5,
+    "FixAge": 5,
+    "TimeActive": 9579631,
+    "lastResetCause": 16
+  },
+  "tag_fields": {
+    "name": "EC 204"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166481",
+  "payload_fields": {
+    "imei": 357518080166481,
+    "timestamp": 1572351090,
+    "batteryVoltage": 4.22,
+    "boardTemperature": 15,
+    "waterEC": 344,
+    "waterTemperature": 13.68,
+    "Lat": 52.2260272,
+    "Lon": 5.1747473,
+    "altitude": 25,
+    "speed": 0,
+    "course": 240,
+    "SatInFix": 5,
+    "FixAge": 2,
+    "TimeActive": 167412,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 218"
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080163249",
+  "payload_fields": {
+    "imei": 357518080163249,
+    "timestamp": 1572351092,
+    "batteryVoltage": 4.1899999999999995,
+    "boardTemperature": 24,
+    "waterEC": 829,
+    "waterTemperature": 12.36,
+    "FixAge": 31,
+    "TimeActive": 14440,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 212"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166887",
+  "payload_fields": {
+    "imei": 357518080166887,
+    "timestamp": 1572351118,
+    "batteryVoltage": 4.2,
+    "boardTemperature": 19,
+    "waterEC": 0,
+    "waterTemperature": 19.59,
+    "Lat": 52.1583865,
+    "Lon": 4.4769224,
+    "altitude": 13,
+    "speed": 1,
+    "course": 0,
+    "SatInFix": 5,
+    "FixAge": 36,
+    "TimeActive": 440173,
+    "lastResetCause": 4
+  },
+  "tag_fields": {
+    "name": "EC 200"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 49,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080201338",
+  "payload_fields": {
+    "imei": 357518080201338,
+    "timestamp": 1572351161,
+    "batteryVoltage": 4.18,
+    "boardTemperature": 17,
+    "waterEC": 70,
+    "waterTemperature": 13.95,
+    "Lat": 52.2261567,
+    "Lon": 5.1747457,
+    "altitude": 27,
+    "speed": 1,
+    "course": 18,
+    "SatInFix": 6,
+    "FixAge": 3,
+    "TimeActive": 11840427,
+    "lastResetCause": 64
+  },
+  "tag_fields": {
+    "name": "EC 211"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080171390",
+  "payload_fields": {
+    "imei": 357518080171390,
+    "timestamp": 1572351244,
+    "batteryVoltage": 4.17,
+    "boardTemperature": 16,
+    "waterEC": 394,
+    "waterTemperature": 9.54,
+    "Lat": 52.0313714,
+    "Lon": 5.3036472,
+    "altitude": 64,
+    "speed": 0,
+    "course": 8,
+    "SatInFix": 6,
+    "FixAge": 2,
+    "TimeActive": 10210524,
+    "lastResetCause": 64
+  },
+  "tag_fields": {
+    "name": "EC 202"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166598",
+  "payload_fields": {
+    "imei": 357518080166598,
+    "timestamp": 1572351373,
+    "batteryVoltage": 4.2,
+    "boardTemperature": 18,
+    "waterEC": 1029,
+    "waterTemperature": 12.18,
+    "Lat": 52.517122,
+    "Lon": 5.5093282,
+    "altitude": 16,
+    "speed": 0,
+    "course": 0,
+    "SatInFix": 5,
+    "FixAge": 2,
+    "TimeActive": 8484310,
+    "lastResetCause": 16
+  },
+  "tag_fields": {
+    "name": "EC 210"
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166580",
+  "payload_fields": {
+    "imei": 357518080166580,
+    "timestamp": 1572351373,
+    "batteryVoltage": 4.15,
+    "boardTemperature": 13,
+    "waterEC": 927,
+    "waterTemperature": 13.68,
+    "Lat": 52.3600721,
+    "Lon": 4.8156788,
+    "altitude": 15,
+    "speed": 0,
+    "course": 2,
+    "SatInFix": 4,
+    "FixAge": 8,
+    "TimeActive": 70218,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 224"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080330582",
+  "payload_fields": {
+    "imei": 357518080330582,
+    "timestamp": 1572351383,
+    "batteryVoltage": 4.11,
+    "boardTemperature": 11,
+    "waterEC": 4262,
+    "waterTemperature": 14.12,
+    "Lat": 52.373188,
+    "Lon": 4.9461041,
+    "altitude": -1,
+    "speed": 1,
+    "course": 0,
+    "SatInFix": 5,
+    "FixAge": 2,
+    "TimeActive": 45922,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 219"
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080163173",
+  "payload_fields": {
+    "imei": 357518080163173,
+    "timestamp": 1572351370,
+    "batteryVoltage": 3.91,
+    "boardTemperature": 20,
+    "waterEC": 1,
+    "waterTemperature": 21,
+    "Lat": 52.5034872,
+    "Lon": 6.0818798,
+    "altitude": 11,
+    "speed": 0,
+    "course": 33,
+    "SatInFix": 5,
+    "FixAge": 28,
+    "TimeActive": 59438,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 231"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080200454",
+  "payload_fields": {
+    "imei": 357518080200454,
+    "timestamp": 1572351440,
+    "batteryVoltage": 4.13,
+    "boardTemperature": 12,
+    "waterEC": 2013,
+    "waterTemperature": 13.51,
+    "Lat": 52.3311021,
+    "Lon": 5.0625892,
+    "altitude": -38,
+    "speed": 0,
+    "course": 219,
+    "SatInFix": 5,
+    "FixAge": 3,
+    "TimeActive": 12023145,
+    "lastResetCause": 16
+  },
+  "tag_fields": {
+    "name": "EC Prototype 002"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166663",
+  "payload_fields": {
+    "imei": 357518080166663,
+    "timestamp": 1572351469,
+    "batteryVoltage": 3.88,
+    "boardTemperature": 17,
+    "waterEC": 4280,
+    "waterTemperature": 15.09,
+    "Lat": 51.8983143,
+    "Lon": 4.4232154,
+    "altitude": -8,
+    "speed": 1,
+    "course": 2,
+    "SatInFix": 7,
+    "FixAge": 2,
+    "TimeActive": 1812,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 243"
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080164395",
+  "payload_fields": {
+    "imei": 357518080164395,
+    "timestamp": 1572351435,
+    "batteryVoltage": 3.73,
+    "boardTemperature": 12,
+    "waterEC": 4477,
+    "waterTemperature": 15.36,
+    "Lat": 51.8982232,
+    "Lon": 4.4233214,
+    "altitude": 8,
+    "speed": 0,
+    "course": 0,
+    "SatInFix": 7,
+    "FixAge": 20,
+    "TimeActive": 11730,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 241"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080168917",
+  "payload_fields": {
+    "imei": 357518080168917,
+    "timestamp": 1572351569,
+    "batteryVoltage": 4.12,
+    "boardTemperature": 16,
+    "waterEC": 1031,
+    "waterTemperature": 14.04,
+    "Lat": 52.3406907,
+    "Lon": 4.9262452,
+    "altitude": -48,
+    "speed": 0,
+    "course": 0,
+    "SatInFix": 4,
+    "FixAge": 2,
+    "TimeActive": 10202448,
+    "lastResetCause": 16
+  },
+  "tag_fields": {
+    "name": "EC 209"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080165368",
+  "payload_fields": {
+    "imei": 357518080165368,
+    "timestamp": 1572351637,
+    "batteryVoltage": 4.14,
+    "boardTemperature": 19,
+    "waterEC": 1603,
+    "waterTemperature": 13.51,
+    "Lat": 52.3400906,
+    "Lon": 4.9106606,
+    "altitude": -1,
+    "speed": 0,
+    "course": 4,
+    "SatInFix": 5,
+    "FixAge": 6,
+    "TimeActive": 9162932,
+    "lastResetCause": 16
+  },
+  "tag_fields": {
+    "name": "EC 208"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 22
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 49,
+    "temp": 23
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080201338",
+  "payload_fields": {
+    "imei": 357518080201338,
+    "timestamp": 1572354773,
+    "batteryVoltage": 4.18,
+    "boardTemperature": 18,
+    "waterEC": 58,
+    "waterTemperature": 15.18,
+    "Lat": 52.2261675,
+    "Lon": 5.1747559,
+    "altitude": 9,
+    "speed": 0,
+    "course": 236,
+    "SatInFix": 6,
+    "FixAge": 15,
+    "TimeActive": 11844039,
+    "lastResetCause": 64
+  },
+  "tag_fields": {
+    "name": "EC 211"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 49,
+    "temp": 23
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 23
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080171390",
+  "payload_fields": {
+    "imei": 357518080171390,
+    "timestamp": 1572354844,
+    "batteryVoltage": 4.17,
+    "boardTemperature": 16,
+    "waterEC": 394,
+    "waterTemperature": 9.8,
+    "Lat": 52.0319006,
+    "Lon": 5.3036982,
+    "altitude": -8,
+    "speed": 0,
+    "course": 242,
+    "SatInFix": 4,
+    "FixAge": 2,
+    "TimeActive": 10214124,
+    "lastResetCause": 64
+  },
+  "tag_fields": {
+    "name": "EC 202"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 23
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 23
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 49,
+    "temp": 23
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166598",
+  "payload_fields": {
+    "imei": 357518080166598,
+    "timestamp": 1572354972,
+    "batteryVoltage": 4.2,
+    "boardTemperature": 21,
+    "waterEC": 1029,
+    "waterTemperature": 12.18,
+    "Lat": 52.5172882,
+    "Lon": 5.5094436,
+    "altitude": -7,
+    "speed": 0,
+    "course": 29,
+    "SatInFix": 6,
+    "FixAge": 1,
+    "TimeActive": 8487909,
+    "lastResetCause": 16
+  },
+  "tag_fields": {
+    "name": "EC 210"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 49,
+    "temp": 23
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166580",
+  "payload_fields": {
+    "imei": 357518080166580,
+    "timestamp": 1572354973,
+    "batteryVoltage": 4.15,
+    "boardTemperature": 12,
+    "waterEC": 929,
+    "waterTemperature": 13.77,
+    "Lat": 52.359892,
+    "Lon": 4.8155518,
+    "altitude": -85,
+    "speed": 0,
+    "course": 207,
+    "SatInFix": 5,
+    "FixAge": 9,
+    "TimeActive": 73818,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 224"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 23
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080330582",
+  "payload_fields": {
+    "imei": 357518080330582,
+    "timestamp": 1572354999,
+    "batteryVoltage": 4.11,
+    "boardTemperature": 11,
+    "waterEC": 4303,
+    "waterTemperature": 14.12,
+    "Lat": 52.3728628,
+    "Lon": 4.9462823,
+    "altitude": 31,
+    "speed": 1,
+    "course": 0,
+    "SatInFix": 4,
+    "FixAge": 17,
+    "TimeActive": 49537,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 219"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 23
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080164395",
+  "payload_fields": {
+    "imei": 357518080164395,
+    "timestamp": 1572355020,
+    "batteryVoltage": 3.73,
+    "boardTemperature": 12,
+    "waterEC": 3457,
+    "waterTemperature": 15.36,
+    "Lat": 51.8983274,
+    "Lon": 4.4232034,
+    "altitude": 9,
+    "speed": 0,
+    "course": 57,
+    "SatInFix": 5,
+    "FixAge": 5,
+    "TimeActive": 15315,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 241"
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080200454",
+  "payload_fields": {
+    "imei": 357518080200454,
+    "timestamp": 1572355040,
+    "batteryVoltage": 4.13,
+    "boardTemperature": 10,
+    "waterEC": 1829,
+    "waterTemperature": 13.51,
+    "Lat": 52.3311606,
+    "Lon": 5.0624278,
+    "altitude": -10,
+    "speed": 0,
+    "course": 254,
+    "SatInFix": 6,
+    "FixAge": 3,
+    "TimeActive": 12026745,
+    "lastResetCause": 16
+  },
+  "tag_fields": {
+    "name": "EC Prototype 002"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 23
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080163173",
+  "payload_fields": {
+    "imei": 357518080163173,
+    "timestamp": 1572355041,
+    "batteryVoltage": 3.91,
+    "boardTemperature": 21,
+    "waterEC": 2,
+    "waterTemperature": 21.09,
+    "Lat": 52.5035229,
+    "Lon": 6.0818776,
+    "altitude": 32,
+    "speed": 0,
+    "course": 5,
+    "SatInFix": 5,
+    "FixAge": 90,
+    "TimeActive": 63109,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 231"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 23
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166663",
+  "payload_fields": {
+    "imei": 357518080166663,
+    "timestamp": 1572355078,
+    "batteryVoltage": 3.94,
+    "boardTemperature": 20,
+    "waterEC": 3318,
+    "waterTemperature": 15.09,
+    "Lat": 51.8982689,
+    "Lon": 4.4232705,
+    "altitude": 7,
+    "speed": 0,
+    "course": 0,
+    "SatInFix": 4,
+    "FixAge": 1,
+    "TimeActive": 5421,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 243"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 23
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080169006",
+  "payload_fields": {
+    "imei": 357518080169006,
+    "timestamp": 1572356226,
+    "batteryVoltage": 4.17,
+    "boardTemperature": 15,
+    "waterEC": 677,
+    "waterTemperature": 12.45,
+    "FixAge": 1,
+    "TimeActive": 54911,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 213"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 24
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 24
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 48,
+    "temp": 24
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080332257",
+  "payload_fields": {
+    "imei": 357518080332257,
+    "timestamp": 1572356304,
+    "batteryVoltage": 3.82,
+    "boardTemperature": 10,
+    "waterEC": 2787,
+    "waterTemperature": 15,
+    "Lat": 51.8983328,
+    "Lon": 4.4231358,
+    "altitude": 24,
+    "speed": 0,
+    "course": 0,
+    "SatInFix": 5,
+    "FixAge": 3,
+    "TimeActive": 13513,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 240"
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 47,
+    "temp": 24
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 47,
+    "temp": 24
+  }
+}
+{
+  "app_id": "WON",
+  "dev_id": "SMA-A42987",
+  "payload_fields": {
+    "hum": 47,
+    "temp": 24
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166598",
+  "payload_fields": {
+    "imei": 357518080166598,
+    "timestamp": 1572356771,
+    "batteryVoltage": 4.2,
+    "boardTemperature": 20,
+    "waterEC": 1032,
+    "waterTemperature": 12.18,
+    "Lat": 52.517299,
+    "Lon": 5.5093441,
+    "altitude": -24,
+    "speed": 0,
+    "course": 0,
+    "SatInFix": 5,
+    "FixAge": 0,
+    "TimeActive": 8489708,
+    "lastResetCause": 16
+  },
+  "tag_fields": {
+    "name": "EC 210"
+  }
+}
+{
+  "app_id": "mijnomgeving",
+  "dev_id": "357518080166580",
+  "payload_fields": {
+    "imei": 357518080166580,
+    "timestamp": 1572356770,
+    "batteryVoltage": 4.15,
+    "boardTemperature": 12,
+    "waterEC": 927,
+    "waterTemperature": 13.86,
+    "Lat": 52.3595953,
+    "Lon": 4.8159057,
+    "altitude": 61,
+    "speed": 0,
+    "course": 3,
+    "SatInFix": 4,
+    "FixAge": 6,
+    "TimeActive": 75615,
+    "lastResetCause": 32
+  },
+  "tag_fields": {
+    "name": "EC 224"
+  }
+}
