@@ -25,9 +25,9 @@ Linux Ubuntu ([Just van den Broecke](https://github.com/justb4/)) en Kubernetes 
 * python cli applicatie voor laden van  sensor observaties van sensemakersams mqtt stream in STA: 
 https://github.com/arbakker/sta-obs-loader
 
-* SensorUp STA Graph - https://developers.sensorup.com/tutorials/chart/ . Javascript library voor het tonen van SensorThings meetwaarden in tijdgrafiek. Resultaaat interoperabiliteit test met GOST server: werkt na het opgeven van SensorThings server + datatstream.
+* SensorUp STA Graph - https://developers.sensorup.com/tutorials/chart/ . Javascript library voor het tonen van SensorThings meetwaarden in tijdgrafiek. Resultaaat interoperabiliteit test met GOST server: werkt na het opgeven van SensorThings server + datastream.
 
-* GeoHealthCheck - https://geohealthcheck.org/ . Tool voor  monitoring OGC Web Services uptime en availability. Onlwngs is support voor monitoring SensorThings servers toegevoegd. Resultaaat interoperabiliteit test met GOST server : werkt na het opgeven van SensorThings server.   
+* GeoHealthCheck - https://geohealthcheck.org/ . Tool voor  monitoring OGC Web Services uptime en availability. Onlangs is support voor monitoring SensorThings servers toegevoegd. Resultaaat interoperabiliteit test met GOST server : werkt na het opgeven van SensorThings server.   
 
 # Aandachtspunten Nederlands profiel sensorthingsAPI
 ## Ruwe data inwinnen & uitleveren
